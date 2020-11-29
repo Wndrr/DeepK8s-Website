@@ -1,0 +1,1006 @@
+/*  Theme Name: Crafton - SaaS & Software Html5 Landing Page
+Author: VBThemes
+Version: 1.0.0
+Created: April 2019
+File Description:Main css file of the template
+*/
+
+
+/***************
+
+1.BASIC
+2.HELPER
+3.NAVBAR
+4.HOME
+5.FEATURES
+6.SERVICES
+7.WORK FLOW 
+8.PORTFOLIO
+9.WEB FORM
+10.TESTIMONIAL
+11.PRICING
+11.FUNFACTS
+12.CTA
+13.FAQ
+14.CONTACT US
+15.FOOTER
+16.RESPONSIVE
+*****************/
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700');
+
+/*=================
+    01.BASIC
+===================*/
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1.font-weight-bold,
+h2.font-weight-bold,
+h3.font-weight-bold,
+h4.font-weight-bold,
+h5.font-weight-bold,
+h6.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+a,
+a:hover,
+a:focus,
+button {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+::selection {
+    background: rgba(156, 175, 179, 0.6);
+}
+
+::-moz-selection {
+    background: rgba(156, 175, 179, 0.6);
+}
+
+.back_top_angle_up {
+    text-align: center;
+    position: fixed;
+    bottom: 15px;
+    height: 35px;
+    width: 35px;
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #886AEA 100%);
+    display: none;
+    z-index: 10000;
+    border-radius: 3px;
+    right: 35px;
+    transition: all 0.5s;
+}
+
+.back_top_angle_up i {
+    color: #fff;
+    line-height: 35px;
+    font-size: 28px;
+    display: block;
+}
+
+
+/*==================
+    02.HELPER
+====================*/
+
+.bg_overlay_cover_on_dark {
+    background-color: rgba(50, 57, 67, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg_overlay_cover_on {
+    background: rgba(27, 31, 37, 0.85);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text_custom {
+    color: #886AEA !important;
+}
+
+.bg_gradiant_custom {
+    /*background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #886AEA 100%);
+}
+
+.btn_small {
+    padding: 10px 14px;
+}
+
+.btn {
+    padding: 13px 28px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.5s;
+    letter-spacing: 0.6px;
+    box-shadow: none !important;
+    text-transform: uppercase;
+    outline: none !important;
+}
+
+.btn_round {
+    border-radius: 30px;
+}
+
+.btn_custom {
+    border: 1px solid #886AEA;
+    color: #fff;
+    background-color: #886AEA;
+    border-radius: 0px;
+}
+
+.btn_custom:hover,
+.btn_custom:focus,
+.btn_custom:active,
+.btn_custom.active,
+.btn_custom.focus,
+.btn_custom:active,
+.btn_custom:focus,
+.btn_custom:hover,
+.open > .dropdown-toggle.btn_custom {
+    color: #f3f3f3;
+    background-color: #9784d4;
+    border-color: #9784d4;
+}
+
+.btn_outline_custom {
+    border: 2px solid #f5f5f5;
+    color: #ffffff;
+}
+
+.btn_outline_custom:hover,
+.btn_outline_custom:focus,
+.btn_outline_custom:active,
+.btn_outline_custom.active,
+.btn_outline_custom.focus,
+.btn_outline_custom:active,
+.btn_outline_custom:focus,
+.btn_outline_custom:hover,
+.open > .dropdown-toggle.btn_outline_custom {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn_custom_small {
+    /*border: 1px solid #886AEA;*/
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #fff;
+}
+
+.stickyadd.custom-nav .btn_custom_small {
+    border: 1px solid #886AEA;
+    color: #fff;
+    background-color: #886AEA;
+    border-radius: 0px;
+}
+
+.full_height_100vh {
+    height: 100vh;
+}
+
+.vertical_content_manage {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+}
+
+.section_all {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section_title_all h3 {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.section_subtitle {
+    max-width: 600px;
+}
+
+.section_title_all span {
+    color: #886AEA;
+}
+
+.section_subtitle_border {
+    height: 2px;
+    background-color: #886AEA;
+    width: 100px;
+    background-image: linear-gradient(135deg, #886AEA, #fff);
+}
+
+
+/*======================
+    03  NAVBAR
+=======================*/
+
+.custom-nav {
+    padding: 15px 0px;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 999;
+    margin-bottom: 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.custom-nav .navbar-nav li a {
+    color: #fff;
+    font-size: 15px;
+    background-color: transparent !important;
+    padding: 15px 0;
+    margin: 0 7px;
+    transition: all 0.4s;
+}
+
+.navbar-toggler {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+
+.navbar-brand img {
+    height: 28px;
+}
+
+.stickyadd .navbar-nav {
+    margin-top: 0px;
+}
+
+.stickyadd.custom-nav .navbar-nav li a {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.custom-nav .navbar-brand.logo img {
+    height: 28px;
+}
+
+.stickyadd.custom-nav {
+    margin-top: 0px;
+    padding: 8px 0px;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+}
+
+.custom-nav .navbar-nav li.active a,
+.custom-nav .navbar-nav li a:hover,
+.custom-nav .navbar-nav li a:active {
+    color: #16d4e2 !important;
+}
+
+.navbar-toggle {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+
+.custom-nav .btn-custom {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+    background-color: transparent;
+    border-color: #337ab7;
+}
+
+.logo .logo-light {
+    display: inline-block;
+}
+
+.stickyadd .logo .logo-dark {
+    display: inline-block;
+}
+
+.stickyadd .logo .logo-light {
+    display: none;
+}
+
+.logo .logo-dark {
+    display: none;
+}
+
+
+/*================
+    04.HOME
+==================*/
+
+.header_title {
+    letter-spacing: 1px;
+}
+
+.home_subtitle {
+    color: #dfdfdf;
+    max-width: 550px;
+    line-height: 1.8;
+}
+
+.home_small_title_border {
+    height: 2px;
+    width: 70px;
+    background-color: #886AEA;
+}
+
+.home_table_cell_center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.home_table_cell {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.full_height_100vh_home {
+    height: 100vh;
+}
+
+.software_home_dashbord img {
+    position: relative;
+    top: 60px;
+    z-index: 100;
+    max-width: 900px;
+}
+
+.software_home_extra_p {
+    padding-top: 200px;
+}
+
+
+/*------------------
+   HOME BG OVERLAY
+------------------*/
+
+.bg_home_soft_img {
+    background-image: url(../images/casual-1.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.bg_overlay_cover_software {
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #886AEA 100%);
+    /*background: rgba(27, 31, 37, 0.85);*/
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*-------------------
+    HOME - 7
+--------------------*/
+
+.up-index {
+    z-index: 2;
+}
+
+
+/*------------------
+    HOME - 9
+-------------------*/
+
+.bg_home_dark_img {
+    background-image: url(../images/business-women-.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+/*-------------------
+    LOG IN PAGE
+--------------------*/
+
+.business_form_custom .form-control:focus {
+    border-color: #886AEA !important;
+    box-shadow: none;
+    outline: 0;
+}
+
+.business_form_custom .form-control {
+    height: 50px;
+    font-size: 16px;
+    border-color: #886AEA;
+}
+
+.landing_form_custom {
+    box-shadow: 0 0 5px 0px #fffafa;
+    padding: 40px;
+}
+
+
+/*===================
+    ABOUT US
+====================*/
+
+.lan_about_boxed {
+    transition: all 0.5s;
+}
+
+.lan_about_boxed:hover .lan_about_icons {
+    -webkit-transform: translate(0, -15px) rotate(13deg);
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.lan_about_boxed .lan_about_icons {
+    transition: all 0.5s;
+    display: inline-block;
+    font-size: 36px;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+    color: #fff;
+    margin: 2px 0;
+    overflow: hidden;
+    border-radius: 50%;
+    background: #886AEA;
+}
+
+.lan_about_boxed .lan_about_content h5 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.lan_about_boxed .lan_about_content p {
+    font-size: 16px;
+}
+
+
+/*====================
+   05. FEATURES
+====================*/
+
+.features_box_title_top {
+    max-width: 400px;
+    line-height: 1.4;
+}
+
+.features_border_top {
+    height: 4px;
+    background: #886AEA;
+    width: 100px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.soft_features_icon i {
+    font-size: 34px;
+    background: rgba(136, 106, 234, 0.41);
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.soft_features_header_main .features_heading {
+    max-width: 400px;
+    line-height: 1.4;
+}
+
+.soft_features_icon span {
+    position: relative;
+    top: -10px;
+}
+
+.soft_content_box i {
+    float: left;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 35px;
+}
+
+.business_choose_icon span {
+    float: left;
+    margin-right: 20px;
+    font-size: 22px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 35px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #886AEA 100%);
+}
+
+.business_choose_details {
+    overflow: hidden;
+}
+
+
+/*====================
+   0.6  SERVICES
+======================*/
+
+.landing_services_boxes .landing_services_icon i {
+    font-size: 44px;
+}
+
+.landing_services_content p {
+    line-height: 1.6;
+}
+
+
+/*==================
+    0.7 WORK FLOW
+====================*/
+
+.how_it_work_box_landing {
+    border: 1px dashed #ededed;
+}
+
+.how_it_work_box_landing span {
+    font-size: 42px;
+    opacity: 0.5;
+}
+
+.process_features_number i {
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px -2px rgba(158, 152, 153, 0.5);
+}
+
+
+/*=====================
+    0.8 PORTFOLIO
+======================*/
+
+.work_menu li {
+    margin-right: 0px !important;
+}
+
+.work_menu li:after {
+    content: "";
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: #757575;
+    margin: 0px 8px;
+    position: relative;
+    display: inline-block;
+    top: -3px;
+}
+
+.work_menu li:last-child:after {
+    content: "";
+    display: none;
+}
+
+.work_menu li a {
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #9a9a9a;
+    display: inline-block;
+    transition: all 0.5s;
+    margin-top: 5px;
+    padding: 6px 16px;
+    border-radius: 5px;
+}
+
+.work_menu li a.active {
+    background: rgba(136, 106, 234, 0.41);
+    color: #886AEA;
+}
+
+.work_menu li a:hover {
+    background: rgba(136, 106, 234, 0.41);
+    color: #886AEA !important;
+}
+
+.work_item {
+    padding: 15px;
+}
+
+.work_item .work_box {
+    box-shadow: 0 0px 35px 1px rgba(179, 179, 179, 0.25);
+}
+
+.work_item .work_box .work_detail p {
+    font-size: 13px;
+}
+
+.work_item .work_box .work_detail h4 {
+    font-size: 18px;
+}
+
+
+/*================
+   0.9 WEB FORM
+==================*/
+
+.cta_details_mx {
+    max-width: 635px;
+    color: #e4e4e4;
+}
+
+.subcribe-newslatter input {
+    padding: 14px 12px;
+    width: 100%;
+    font-size: 16px;
+    color: #4c5667 !important;
+    border: none;
+    padding-left: 30px;
+    background-color: #f1f1f1;
+    border-right: 2px;
+}
+
+.subcribe-newslatter button {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    outline: none !important;
+    /* border-radius: 30px; */
+    font-size: 15px;
+    padding: 12px 30px;
+}
+
+.subcribe-newslatter form {
+    max-width: 550px;
+}
+
+.title_subscriber {
+    max-width: 400px;
+}
+
+.video_section .presentation_icon {
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    margin-left: -40px;
+    margin-top: -40px;
+}
+
+.presentation_icon {
+    outline: none !important;
+    width: 65px;
+    height: 65px;
+    padding-left: 2px;
+    border-radius: 50%;
+    z-index: 4;
+    background-image: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #886AEA 100%);
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    color: #fff !important;
+    font-size: 35px;
+    line-height: 65px;
+}
+
+.section_icons i {
+    font-size: 40px;
+    background-color: #ffffff;
+    color: #886AEA;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+
+/*====================
+  10. TESTIMONIAL
+=====================*/
+
+.team-content h5 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.team-content p {
+    font-size: 16px;
+}
+
+.logo_img img {
+    max-height: 120px;
+    width: auto !important;
+}
+
+.logo_img img {
+    opacity: 0.8;
+}
+
+
+/*=====================
+   11. PRICING
+======================*/
+
+.landing_price_box {
+    padding: 40px 25px;
+}
+
+.landing_price_features p {
+    line-height: 1.8;
+}
+
+.landing_plan_price h6 {
+    font-size: 14px;
+}
+
+.business_price_icon i {
+    font-size: 42px;
+}
+
+.business_price_header {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+
+/*==========================
+    11.FUNFACTS
+============================*/
+
+.bg_counter_cover {
+    background-image: url(../images/bg_counter.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.counter_box .info_name {
+    font-size: 16px;
+    color: #ededed;
+}
+
+.counter_box .counter_icon {
+    font-size: 38px;
+}
+
+.counter_img img {
+    box-shadow: 0px 0px 39px 20px rgba(228, 228, 228, 0.23);
+}
+
+
+/*====================
+   12. CTA
+====================*/
+
+.cta_details {
+    max-width: 635px;
+    line-height: 2.0;
+}
+
+
+/*====================
+    13. FAQ
+=====================*/
+
+.landing_faq_box {
+    max-width: 500px;
+}
+
+.faq_box_right i {
+    float: left;
+    color: #2575fc;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.faq_content {
+    overflow: hidden;
+    padding-left: 26px;
+}
+
+.faq_subtitle {
+    line-height: 26px;
+}
+
+
+/*======================
+  14. CONTACT US
+========================*/
+
+.buss_form_custom {
+    max-width: 900px;
+}
+
+.buss_form_custom .form-control {
+    height: 50px;
+    font-size: 16px;
+    border-color: #eae7e7;
+}
+
+textarea.form-control {
+    height: auto !important;
+}
+
+.buss_form_custom .form-control:focus {
+    border-color: #886AEA !important;
+    box-shadow: none;
+    outline: 0;
+}
+
+.buss_form_custom {
+    box-shadow: 0 0 35px 1px #efefef;
+    padding: 40px;
+}
+
+
+/*================
+    15. FOOTER
+==================*/
+
+.footer_social_icon .social_icon {
+    border-radius: 35px;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #d3d3d3;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.logo_footer img {
+    max-width: 200px;
+}
+
+.footer_about_detail p {
+    color: #d3d3d3;
+}
+
+.footer_links_all ul li a {
+    color: #d3d3d3;
+    margin-bottom: 6px;
+    display: block;
+    transition: all 0.5s;
+}
+
+.footer_links_all ul li a:hover {
+    color: #F9F9F9;
+}
+
+.footer_alt_cpy {
+    color: #d3d3d3;
+}
+
+.content_details p {
+    overflow: hidden;
+}
+
+.content_details {
+    overflow: hidden;
+}
+
+
+/*=====================
+    16. RESPONSIVE
+=======================*/
+
+@media (max-width: 768px) {
+    .custom-nav {
+        margin-top: 0px;
+        padding: 10px 0px !important;
+        background-color: #fff !important;
+    }
+    .vertical_content_manage {
+        display: inherit;
+    }
+    .home_title_landing {
+        font-size: 32px;
+    }
+    .custom-nav .navbar-nav li a {
+        margin: 0 0px;
+        padding: 6px 0;
+        color: rgba(0, 0, 0, 0.55) !important;
+    }
+    .custom-nav .navbar-nav li.active a {
+        color: #16d4e2 !important;
+    }
+    .custom-nav>.container {
+        width: 90%;
+    }
+    .custom-nav .logo .logo-dark {
+        display: inline-block;
+    }
+    .custom-nav .logo .logo-light {
+        display: none;
+    }
+    .custom-nav .navbar-brand.logo img {
+        height: 26px;
+    }
+    .navbar-nav {
+        margin-top: 0px;
+    }
+    .navbar-toggler {
+        font-size: 28px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: #000;
+    }
+    .home-bg,
+    .h-100vh.jarallax,
+    .h-100vh.bg-dark,
+    .full_height_100vh_home,
+    .full_height_100vh {
+        padding: 110px 0;
+    }
+    .h-100vh,
+    .full_height_100vh_home {
+        height: auto;
+    }
+    .cta_heading h2 {
+        font-size: 26px
+    }
+    .software_home_dashbord img {
+        max-width: 100% !important;
+        top: 35px;
+    }
+    .header_title {
+        font-size: 30px;
+    }
+    .landing_form_custom {
+        box-shadow: 0 0 5px 0px #fffafa;
+        padding: 10px;
+    }
+    .business_form_custom .form-control {
+        height: 45px;
+        font-size: 14px;
+        border-color: #886AEA;
+    }
+}
